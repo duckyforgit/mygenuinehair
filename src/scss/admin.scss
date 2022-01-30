@@ -1,0 +1,74 @@
+@charset "UTF-8";/*!
+ * Admin Editor Styles
+ */
+.login h1 a {
+    background-image: url('../img/login-logo-transparent.png') !important;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+    height: 169px;
+    width: 300px;
+}
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus
+{
+    border-color: #f14f0c;
+    box-shadow: 0 0 0 1px #f55c20;
+}
+.wp-core-ui .button, 
+.wp-core-ui .button-secondary {
+    color:  #f55c20;
+}
+.wp-core-ui .button.hover, 
+.wp-core-ui .button:hover, 
+.wp-core-ui .button-secondary:hover {
+    background: #f55c20;
+    border-color: #f14f0c;
+    color: #0a4b78;
+}
+.wp-core-ui .button-primary, 
+.wp-core-ui .button-primary, 
+.wp-core-ui .button-primary, 
+.wp-core-ui .button-primary{
+    background: #f55c20;
+    border-color: #f14f0c;
+    box-shadow: none;
+    color: #fff;
+}
+.wp-core-ui .button-primary.active, 
+.wp-core-ui .button-primary.active:hover, 
+.wp-core-ui .button-primary.active:focus, 
+.wp-core-ui .button-primary:active {
+    background: #f55c20;
+    border-color: #f14f0c;
+    box-shadow: 0 4px #f14f0c;
+    top: 2px;
+}
+.wp-core-ui .button-primary.hover, 
+.wp-core-ui .button-primary:hover, 
+.wp-core-ui .button-primary.focus, 
+.wp-core-ui .button-primary:focus {
+    background: #f55c20;
+    border-color: #f14f0c;
+    box-shadow: 0 4px #f14f0c;
+    top: 2px;
+}
+
+/**
+ * Login Logout page
+ */
+body.login {
+    background: #76ded9;
+    background: linear-gradient(90deg, #76ded9 0, #60c3be 35%, #5bb6b1 100%);
+    padding: 10px;
+    text-align: center;
+    background: #76ded9;
+    background: linear-gradient(180deg , #76ded9 0, #60c3be 35%, #5bb6b1 100%);
+}
+
+#adminmenu div.separator {
+    height: 2px;
+    padding: 0;
+   
+    background: orange;
+}

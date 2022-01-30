@@ -1,0 +1,27 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap/_variables.scss, paste it here and edit the value.
+
+
+$primary: #00c4e1; // Thats a sample how you could change a BootStrap variable.
+/* teal logo color - brand */
+$color__brand-color: #00c4e1;
+$color__primary-color: #333; 
+$color__hover-brand-color: lighten(#00c4e1, 50%);
+
+$dark-gray: #ccc;
+$light-gray: #eee;
+$gray-300: #ddd;
+$gray-200: #eee;
+$black: #0a0a0a;
+$dark-nav-color: #2C3840;
+$primary-color: #00c4e1;
+
+$logo-blue: #00586e;
+$logo-green-true: #3d5500;
+$logo-green: #91a74f;
+$logo-green-3: #53641e;
+//$carousel-transition: transform 2s ease-in-out, opacity .5s ease-in-out;
+//$carousel-transition-duration: 3s;
+
+ $logo-light-green:	#c7c3a6;

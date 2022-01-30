@@ -1,0 +1,30 @@
+ 
+ 
+ 
+
+
+@import "./theme/theme_variables.scss";  /* <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here */
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';       /* <-------- Loads Bootstrap*/
+@import "./understrap/understrap.scss";  /* <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP*/
+@import "./understrap/woocommerce.scss"; /* <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce*/
+
+/* Optional files - If you dont use the corresponding scripts/fonts comment em out*/
+@import "./components/fontawesome/fontawesome.scss";    /* <-------- Font Awesome Icon font*/
+@import "./components/bootstrap-icons/bootstrap-icons.scss"; /* <-------- Bootstrap Icons - Bootstrap 4 support*/
+/* Any additional imported files */
+@import "./theme/theme.scss";            /* <-------- That's where you can add your own design. Thats your part!*/
+/*@import "./components/contact-form7";  */  /* <-------- Contact Form 7 - Bootstrap 4 support*/
+/* @import "./components/remixicons";  */  		/* <-------- Remix Icons */
+@import './components/slider.scss';										/* <-------- Swiper  - Slider */
+@import "./components/aos/aos.scss"; 													/* <-------- AOS  - Animate on Scroll */
+@import "./components/owl.carousel.scss"; 		 											 
+/* how to use remix icons */
+/* <i class="ri-phone-lock-line"></i> */
+.quiz-question-1-image img {
+	max-width: 150px !important;
+}
+$fa-font-path: '../webfonts';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';		

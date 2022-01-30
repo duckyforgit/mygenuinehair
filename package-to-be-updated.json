@@ -1,0 +1,66 @@
+{
+  "name": "genuine",
+  "version": "1.0.0",
+  "description": "Wordpress biz theme using themename and bootstrap 5",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_OPTIONS=--max_old_space_size=4096 webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "duckyforgit"
+  },
+  "keywords": [
+    "biz",
+    "wordpress",
+    "bootstrap"
+  ],
+  "author": "maureen mladucky",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "acorn": "^8.4.1",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "exports-loader": "^3.0.0",
+    "glob-parent": "^6.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.3.6",
+    "purgecss": "^4.1.3",
+    "purgecss-with-wordpress": "^4.0.3",
+    "regenerator-runtime": "^0.13.9",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-stream": "^7.0.0",
+    "yargs": "^17.1.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "aos": "^2.3.4",
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0",
+    "isotope-layout": "^3.0.6",
+    "js-cookie": "^3.0.0",
+    "masonry-layout": "^4.2.2"
+  }
+}

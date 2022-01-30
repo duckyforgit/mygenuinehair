@@ -1,0 +1,333 @@
+<!--https://www.geeksforgeeks.org/-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Create a Form Dynamically with
+			the JavaScript
+		</title>
+	</head>
+	<body style="text-align: center;">
+		<h1 style="color: green;">
+			GeeksforGeeks
+		</h1>
+		<p>
+		Click on the button to create
+		a form dynamically
+		</p>
+		<button onClick="GFG_Fun()">
+			click here
+		</button>
+		<p id="GFG_DOWN"></p>
+<script>
+	var down = document.getElementById("GFG_DOWN");
+			
+	// Create a break line element
+	var br = document.createElement("br");
+	function GFG_Fun() {
+				
+	// Create a form synamically
+	var form = document.createElement("form");
+	form.setAttribute("method", "post");
+	form.setAttribute("action", "submit.php");
+
+	// Create an input element for Full Name
+	var FN = document.createElement("input");
+	FN.setAttribute("type", "text");
+	FN.setAttribute("name", "FullName");
+	FN.setAttribute("placeholder", "Full Name");
+
+	// Create an input element for date of birth
+	var DOB = document.createElement("input");
+	DOB.setAttribute("type", "text");
+	DOB.setAttribute("name", "dob");
+	DOB.setAttribute("placeholder", "DOB");
+
+	// Create an input element for emailID
+	var EID = document.createElement("input");
+	EID.setAttribute("type", "text");
+	EID.setAttribute("name", "emailID");
+	EID.setAttribute("placeholder", "E-Mail ID");
+
+	// Create an input element for password
+	var PWD = document.createElement("input");
+	PWD.setAttribute("type", "password");
+	PWD.setAttribute("name", "password");
+	PWD.setAttribute("placeholder", "Password");
+
+	// Create an input element for retype-password
+	var RPWD = document.createElement("input");
+	RPWD.setAttribute("type", "password");
+	RPWD.setAttribute("name", "reTypePassword");
+	RPWD.setAttribute("placeholder", "ReEnter Password");
+
+				// create a submit button
+				var s = document.createElement("input");
+				s.setAttribute("type", "submit");
+				s.setAttribute("value", "Submit");
+				
+				// Append the full name input to the form
+				form.appendChild(FN);
+				
+				// Inserting a line break
+				form.appendChild(br.cloneNode());
+				
+				// Append the DOB to the form
+				form.appendChild(DOB);
+				form.appendChild(br.cloneNode());
+				
+				// Append the emailID to the form
+				form.appendChild(EID);
+				form.appendChild(br.cloneNode());
+				
+				// Append the Password to the form
+				form.appendChild(PWD);
+				form.appendChild(br.cloneNode());
+				
+				// Append the ReEnterPassword to the form
+				form.appendChild(RPWD);
+				form.appendChild(br.cloneNode());
+				
+				// Append the submit button to the form
+				form.appendChild(s);
+
+				document.getElementsByTagName("body")[0]
+			.appendChild(form);
+			}
+		</script>
+	</body>
+</html>
+<!--Approach 2: This approach is somewhat similar to the previous one but using the JQuery method to append the elements. Use document.createElement() to create the new elements and use setAttribute() method to set the attributes of elements. Append these elements to the < form > element by append() method of JQuery. Finally append the <form> element to the <body> element of the document. This example creates a LOGIN form.-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Create a Form Dynamically
+			with the JavaScript
+		</title>
+	</head>
+	<body style="text-align: center;">
+		<h1 style="color: green;">
+			GeeksforGeeks
+		</h1>
+		<p>
+			Click on the button to create
+			a form dynamically
+		</p>
+		<button onClick="GFG_Fun()">
+			click here
+		</button>
+		<p id="GFG_DOWN"></p>
+		<script>
+			var down = document.getElementById("GFG_DOWN");
+			function GFG_Fun() {
+				
+				// Create a form synamically
+				var form = document.createElement("form");
+				form.setAttribute("method", "post");
+				form.setAttribute("action", "submit.php");
+
+				// Create an input element for emailID
+				var ID = document.createElement("input");
+				ID.setAttribute("type", "text");
+				ID.setAttribute("name", "emailID");
+				ID.setAttribute("placeholder", "E-Mail ID");
+
+				// Create an input element for password
+				var PWD = document.createElement("input");
+				PWD.setAttribute("type", "password");
+				PWD.setAttribute("name", "password");
+				PWD.setAttribute("placeholder", "Password");
+
+				// Create a submit button
+				var s = document.createElement("input");
+				s.setAttribute("type", "submit");
+				s.setAttribute("value", "Submit");
+
+				// Append the email_ID input to the form
+				form.append(ID);
+				
+				// Append the password to the form
+				form.append(PWD);
+				
+				// Append the button to the form
+				form.append(s);
+
+				document.getElementsByTagName("body")[0]
+			.appendChild(form);
+			}
+		</script>
+	</body>
+</html>
+<!--How to create dictionary and add key–value pairs dynamically?
+Last Updated : 28 May, 2020
+In this article, we will discuss how we can create a dictionary in JavaScript and add key-value pairs in it. Actually there is no ‘dictionary’ type in JavaScript but we can create key-value pairs by using JavaScript Objects. Create a new JavaScript Object  which will act as dictionary.
+
+Syntax: Key can be a string , integer. If you just write key1 or any number, it will treat as a string.
+
+var dict = { key1 : value1 , 
+             key2 : value2 , 
+             .... 
+           };
+Create empty dictionary
+var dict = {};
+Adding Key-Value Pairs in Dictionary
+dict[new_key] = new_value;
+or
+If new_key is already present in the dictionary then the value of this will be updated to new_value.
+
+dict.new_key = new_value;
+Accessing Key-Value Pairs
+var value = dict[key];
+or
+
+var value = dict.key;
+Iterating the whole dictionary
+for(var key in dict) {
+   console.log(key + " : " + dict[key]);
+}
+Example:
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dictionary in Javascript</title>
+	</head>
+	<body style="text-align: center;">
+		<h1 style="color: green;">
+			GeeksforGeeks
+		</h1>
+		<p>
+			var dict = { <br />
+			"geek" : 1 , <br />
+			"for" : "2", <br />
+			"geeks" : 3.5 <br />
+			}; <br />
+		</p>
+
+
+		<button onClick="fun()">
+			Add new Key-Value Pairs
+		</button>
+
+		<p id="demo"></p>
+
+
+		<!-- Script to create dictionary
+				and add key-value pairs -->
+		<script>
+			function fun() {
+				var dict = {
+					geek: 1,
+					for: "2",
+					geeks: 3.5,
+				};
+
+				dict.new_geeks = "new_value";
+				dict["another_new_geeks"] =
+				"another_value";
+
+				var to_show = "var dict = { <br>";
+
+				for (var key in dict) {
+					to_show += '"' + key + '" : '
+					+ dict[key] + "<br>";
+				}
+
+				to_show += " }; <br>";
+
+				document.getElementById("demo")
+				.innerHTML = to_show;
+			}
+		</script>
+	</body>
+</html>	
+
+<!--How to add key/value pair to a JavaScript object?
+Last Updated : 22 Apr, 2019
+In order to add key/value pair to a JavaScript object, Either we use dot notation or square bracket notation. Both methods are widely accepted.
+
+Example 1: This example adds {“nextFavColor” : “red”} to the GFG_p object by using dot notation.-->
+	<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		JavaScript | Add a key/value
+		pair to JavaScript object
+	</title>
+</head>
+	
+<body style = "text-align:center;">
+	<h1 style = "color:green;" >
+		GeeksForGeeks
+	</h1>
+		
+	<p id="GFG_up" style="color:red;"></p>
+		
+	<button onclick = "Geeks()">
+		Click to add
+	</button>
+		
+	<p id="GFG_down" style="color:green;"></p>
+		
+	<script>
+		var GFG_p = {fName:"Geeks", lName:"forGeeks",
+					age:100, favColor:"green"};
+		var p_up = document.getElementById("GFG_up");
+		var p_down = document.getElementById("GFG_down");
+		p_up.innerHTML = JSON.stringify(GFG_p);
+		
+		function Geeks() {
+			GFG_p.nextFavColor = "Red";
+			p_down.innerHTML = JSON.stringify(GFG_p);	
+		}
+	</script>
+</body>
+
+</html>					
+	<!--Output:
+
+ 
+
+Example 2: This example adds {“thirdFavColor” : “blue”} to the GFG_p object by using square bracket notation.-->		
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		JavaScript | Add a key/value
+		pair to JavaScript object
+	</title>
+</head>
+	
+<body style = "text-align:center;">
+	<h1 style = "color:green;" >
+		GeeksForGeeks
+	</h1>
+		
+	<p id="GFG_up" style="color:blue;"></p>
+		
+	<button onclick = "Geeks()">
+		Click to add
+	</button>
+		
+	<p id="GFG_down" style="color:green;"></p>
+		
+	<script>
+		var GFG_p = {fName:"Geeks", lName:"forGeeks",
+					age:100, favColor:"green"};
+		var p_up = document.getElementById("GFG_up");
+		var p_down = document.getElementById("GFG_down");
+		p_up.innerHTML = JSON.stringify(GFG_p);
+		
+		function Geeks() {
+			GFG_p["thirdFavColor"] = "blue";
+			p_down.innerHTML = JSON.stringify(GFG_p);	
+		}
+	</script>
+</body>
+
+</html>					
